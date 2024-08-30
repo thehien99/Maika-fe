@@ -1,0 +1,116 @@
+// @import "../../sass/index.scss";
+
+// #headerBgColor {
+//   background-color: $backgroundColorHeader;
+//   width: 100%;
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 1;
+//   padding: 20px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   header {
+//     width: calc(100% - 50px);
+//   }
+//   h4 {
+//     font-family: "Shantell Sans", cursive;
+//   }
+//   ul {
+//     margin-bottom: 0;
+//     .header-list {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       color: white;
+//       font-family: "Plus Jakarta Sans", sans-serif;
+//       font-weight: normal;
+//       list-style: none;
+//       a {
+//         text-decoration: none;
+//         color: white;
+//       }
+//       &:hover {
+//         background-color: black;
+//       }
+//       .hover-sub-menu {
+//         display: none;
+//       }
+//       &:hover .hover-sub-menu {
+//         display: block;
+//       }
+//     }
+//   }
+
+// }
+
+/* src/components/Navbar.css */
+
+.navbar {
+  background-color: #000c8c;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-item {
+  display: flex;
+  position: relative;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+// .nav-item:hover .nav-link {
+//   background: #555;
+// }
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 700px;
+}
+
+.submenu-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+.submenu-link:hover {
+  display: block;
+}
+
+.has-submenu:hover .submenu {
+  display: block;
+}
