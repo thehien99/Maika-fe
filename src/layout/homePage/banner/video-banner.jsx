@@ -35,7 +35,7 @@ const VideoBanners = () => {
         </div>
         <div className='p-[0.5rem]'>
           <video muted controls loop ref={videoRef}>
-            <source src={'/'} type='video/mp4' />
+            <source src='https://media.maika.ai/video/Maika%20VN%20Cut.mp4' type='video/mp4' />
           </video>
         </div>
       </div>
