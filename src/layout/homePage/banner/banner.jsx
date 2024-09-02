@@ -14,11 +14,11 @@ const Banner = () => {
         <div className='text-white flex flex-col justify-center items-center text-4xl font-bold p-[50px]'>
           <div className='p-6'>
             <h1 className='text-6xl font-bold text-center text-white'>Trợ lý AI Marketing đa kênh</h1>
-            <div className='text-center mt-16'>
+            <div className='text-center mt-16 w-full'>
               <FadeInLoopText />
             </div>
           </div>
-          <div className='flex justify-between items-center text-xl font-bold'>
+          <div className='flex justify-between items-center text-xl font-bold xl:mt-3 md:mt-8'>
             <div className='bg-blue-500 me-7 p-3 rounded-xl'>
               <span>
                 Đăng ký MIỄN PHÍ

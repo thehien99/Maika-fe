@@ -47,6 +47,11 @@
 
 /* src/components/Navbar.css */
 
+.header-scroll {
+  background-color: black;
+  color: black;
+}
+
 .navbar {
   background-color: #000c8c;
   width: 100%;
@@ -113,4 +118,34 @@
 
 .has-submenu:hover .submenu {
   display: block;
+}
+.header-nav {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .main-header {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 67px;
+    right: 20%;
+    z-index: 12;
+    transition-timing-function: linear;
+  }
+  .header-nav {
+    position: absolute;
+    font-size: 50px;
+    color: #fff;
+    top: 56px;
+    right: 65px;
+    z-index: 11;
+    display: block;
+  }
+
+  .has-menu-login {
+    display: flex;
+  }
 }

@@ -16,7 +16,7 @@ const MainProductCatagories = () => {
     { direct: 'Bài quảng cáo Facebook' },
     { direct: 'Lập kế hoạch nội dung đa kênh' },
     { direct: 'Viết bài đăng Facebook, LinkedIn, Instagram' },
-    { direct: 'Công thức viết quảng cáo phổ biến (AIDA, PAS, 3S…' }
+    { direct: 'Công thức viết quảng cáo phổ biến (AIDA, PAS, 3S…)' }
   ]
 
   const categoriesSubDown = [
@@ -35,7 +35,7 @@ const MainProductCatagories = () => {
             return (
               <li
                 key={item.idx}
-                className={`p-3 rounded-full text-black bg-[#fff] border-2 cursor-pointer ${item.idx === "1" && 'bg-black text-white'} hover:bg-black hover:text-white `}
+                className={`sm:text-center p-3 rounded-full text-black bg-[#fff] border-2 cursor-pointer ${item.idx === "1" && 'bg-black text-white'} hover:bg-[#ccc] hover:text-white `}
               >
                 {item?.name}
               </li>
@@ -43,10 +43,11 @@ const MainProductCatagories = () => {
           })}
         </ul>
       </div>
+
       <div className='categories-sub w-full' >
         <div className='w-full h-full bg-[#000C8C] rounded-3xl container !px-[55px] py-[70px]'>
-          <div className='row categories-sub-up h-[75%]'>
-            <div className='col-6 flex flex-col gap-[19px]'>
+          <div className='row md:flex-row sm:flex-col md:gap-0 sm:gap-[50px] categories-sub-up h-[75%]'>
+            <div className='col-6 col-md-6 col-sm-12 flex flex-col gap-[19px]'>
               <div className='text-white flex justify-cente flex-col gap-4'>
                 <h3 className='font-bold'>Viết nội dung tiếp thị đa kênh theo mẫu</h3>
                 <span>
@@ -57,7 +58,7 @@ const MainProductCatagories = () => {
                 <ul className='text-white !p-0 '>
                   {categoriesSub?.map((item) => {
                     return (
-                      <li className='text-lg mt-2 font-normal flex justify-start items-center gap-3'>
+                      <li className='xl:text-lg mt-2 font-normal flex justify-start items-center gap-3 md:text-[15px] md:items-start md:justify-start'>
                         <TiTick className='text-[24px]' />
                         {item?.direct}
                       </li>
@@ -65,14 +66,14 @@ const MainProductCatagories = () => {
                   })}
                 </ul>
               </div>
-              <div className='cursor-pointer'>
-                <span className='p-3 bg-[#fff] rounded-2xl me-4 font-bold'>Tìm hiểu thêm</span>
+              <div className='cursor-pointer xl:flex xl:flex-row xl:justify-start md:flex md:flex-col md:justify-center md:gap-4 '>
+                <span className='p-3 bg-[#fff] rounded-2xl me-4 font-bold md:w-full xl:w-max'>Tìm hiểu thêm</span>
                 <span className='p-3 border-2 rounded-2xl text-white font-bold hover:border-[#000]'>Khám phá ngay</span>
               </div>
             </div>
-            <div className='col-6 ps-[30px]'>
-              <div className=''>
-                <img src={categoriesImg} alt="" className='rounded-3xl' width='90%' />
+            <div className='col-6 col-md-6 col-sm-12 ps-[30px]'>
+              <div className='w-full'>
+                <img src={categoriesImg} alt="" className='rounded-3xl ' width='90%' />
               </div>
             </div>
           </div>
@@ -81,13 +82,13 @@ const MainProductCatagories = () => {
             <hr className='my-[5rem]' />
           </div>
 
-          <div className='row categories-sub-down'>
-            <div className='col-6 ps-[30px]'>
+          <div className='row md:flex-row sm:flex-col md:gap-0 sm:gap-[50px] categories-sub-down'>
+            <div className='col-6 col-md-6 col-sm-12 flex flex-col ps-[30px]'>
               <div className=''>
                 <img src={categoriesImg} alt="" className='rounded-3xl' width='90%' />
               </div>
             </div>
-            <div className='col-6 flex flex-col gap-8'>
+            <div className='col-6 col-md-6 col-sm-12 flex flex-col gap-8'>
               <div className='text-white flex justify-cente flex-col gap-4'>
                 <h3 className='font-bold'>Workflow</h3>
                 <span>
@@ -97,7 +98,7 @@ const MainProductCatagories = () => {
                 <ul className='text-white !p-0 '>
                   {categoriesSubDown?.map((item) => {
                     return (
-                      <li className='text-lg mt-2 font-normal flex justify-start items-center gap-3'>
+                      <li className='text-lg mt-2 font-normal flex justify-start items-center gap-3 md:text-[15px]'>
                         <TiTick className='text-[24px]' />
                         {item?.direct}
                       </li>
@@ -105,8 +106,8 @@ const MainProductCatagories = () => {
                   })}
                 </ul>
               </div>
-              <div className='cursor-pointer'>
-                <span className='p-3 bg-[#fff] rounded-2xl me-4 font-bold'>Tìm hiểu thêm</span>
+              <div className='cursor-pointer xl:flex xl:flex-row xl:justify-start md:flex md:flex-col md:justify-center md:gap-4 '>
+                <span className='p-3 bg-[#fff] rounded-2xl me-4 font-bold md:w-full xl:w-max'>Tìm hiểu thêm</span>
                 <span className='p-3 border-2 rounded-2xl text-white font-bold hover:border-[#000]'>Khám phá ngay</span>
               </div>
             </div>

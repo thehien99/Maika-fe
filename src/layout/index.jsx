@@ -4,7 +4,7 @@ import HomePage from "./homePage"
 
 const Home = () => {
   return (
-    <div>
+    <div className="home w-[100vw] overflow-x-hidden ">
       <Header />
       <HomePage />
       <Footer />

@@ -13,9 +13,11 @@ import { MdOutlineSecurity, MdPattern, MdOutlineTextSnippet, MdOutlineAutoAwesom
 import { SiTicktick } from "react-icons/si";
 import { FaPlus, FaFacebook, FaGoogle, FaHome, } from "react-icons/fa";
 import { BsCollection } from "react-icons/bs";
+import { IoMenu } from "react-icons/io5";
 
 
 const icons = {
+  IoMenu,
   FaFacebookMessenger,
   MdChevronRight,
   CiSettings,

@@ -56,12 +56,12 @@ const UserFeedback = () => {
   ]
   return (
     <div className='w-full h-full bg-[#f3f7ff]'>
-      <div className='p-16 container'>
+      <div className='md:p-16 xl:p-16  md:container'>
         <div>
           <h1 className='text-center font-bold'>Maika đã giúp gì cho người dùng?</h1>
         </div>
 
-        <div className='grid grid-cols-4 justify-center items-center gap-4 p-10'>
+        <div className='grid md:grid-cols-4 sm:grid-cols-2  w-full justify-center items-center md:gap-4 sm:gap-1 md:p-10'>
           {userReview?.map((item) => {
             return (
               <div key={item?.id} className='border-2 p-6 rounded-3xl bg-[#ffffff] ' style={{ boxShadow: '0px 4px 10px -1px rgba(0, 0, 0, .08), 0px 0px 4px -1px rgba(0, 0, 0, .04)' }}>

@@ -12,21 +12,21 @@ const Footer = () => {
   return (
     <div className='w-full h-full bg-[#000C8C]'>
       <div className='container p-10'>
-        <div className=' flex  gap-28'>
+        <div className=' flex sm:flex-col md:flex-row  md:gap-28 sm:gap-10'>
           <div>
             <h1 className='text-white'>MAIKA</h1>
           </div>
-          <div className='grid grid-cols-4 gap-20'>
+          <div className='md:grid md:grid-cols-4 sm:flex sm:gap-12 sm:justify-center md:gap-20'>
             {contentFooter?.map((item) => {
               return (
                 <div>
-                  <ul className='text-white'>
+                  <ul className='text-white sm:p-0 '>
                     <li className='font-bold mb-6'>{item?.title}</li>
                     <li>{item?.sub}</li>
-                    <li className='mt-2'>{item?.sub1}</li>
-                    <li className='mt-2'>{item?.sub2}</li>
-                    <li className='mt-2'>{item?.sub3}</li>
-                    <li className='mt-2'>{item?.sub4}</li>
+                    <li className='md:mt-2 sm:mt-4'>{item?.sub1}</li>
+                    <li className='md:mt-2 sm:mt-4'>{item?.sub2}</li>
+                    <li className='md:mt-2 sm:mt-4'>{item?.sub3}</li>
+                    <li className='md:mt-2 sm:mt-4'>{item?.sub4}</li>
                   </ul>
                 </div>
               )

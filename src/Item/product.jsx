@@ -7,7 +7,7 @@ const Product = ({ hover }) => {
 
   return (
     <div>
-      {hover == 2 && <div className="container bg-[#fff] p-4 rounded-md ">
+      {hover == 2 && <div className="container w-full bg-[#fff] p-4 rounded-md ">
         <div className="row">
           <div className="col-6">
             <h5 className="text-[#ccc]">Tính năng</h5>
@@ -41,7 +41,7 @@ const Product = ({ hover }) => {
             <div className="p-2">
               <h5 className="text-[#808080]">Lĩnh vực sử dụng</h5>
               <div>
-                <ul>
+                <ul className="p-0">
                   <li className="!text-black !justify-start gap-3 flex !items-start  mt-4">
                     <i className="text-4xl text-[#3399FF] p-2 rounded-xl bg-[#fff]">
                       <RiAdvertisementLine />
@@ -89,6 +89,7 @@ const Product = ({ hover }) => {
         </div>
       </div>
       }
+
       {hover == 3 && <div>
         <div className=" bg-[#fff] p-4 rounded-lg">
           <h5 className="text-black">Hỗ trợ</h5>

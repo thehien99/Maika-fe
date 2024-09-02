@@ -8,11 +8,11 @@ const Auth = () => {
   const { FaFacebook, FaGoogle } = icon
 
   return (
-    <div className='relative w-[100vw] h-[150vh] bg-rose-50'>
+    <div className='relative w-[100vw] h-[150vh] bg-rose-50 overflow-x-hidden'>
       <form className='absolute w-[28%]  top-[0] left-[50%] translate-x-[-50%] translate-y-[20%] flex flex-col justify-center items-center gap-3'>
-        <div className='flex flex-col justify-center items-center gap-3'>
+        <div className='flex flex-col justify-center items-center md:gap-3 sm:gap-7'>
           <div className='flex justify-center items-center'>
-            <a href="/" className='flex justify-center items-center gap-2'>
+            <a href="/" className='flex justify-center items-center gap-2 '>
               <img src="https://app.maika.ai/new-olli-logo.svg" alt="" />
               <img src="https://app.maika.ai/new-olli-text-logo.svg" alt="" />
             </a>
@@ -35,13 +35,13 @@ const Auth = () => {
           <span className='px-2'>Hoặc</span>
           <div className='w-[30%] h-[1px] bg-black' />
         </div>
-        <div className='font-bold w-full h-full text-center'>
+        <div className='font-bold w-full h-full text-center '>
           <Button fieldBtn='Đăng nhập với Google' icon={<FaGoogle />} />
           <Button fieldBtn='Đăng nhập với Facebook' icon={<FaFacebook />} />
         </div>
         <div>
           <span>Bạn xác nhận rằng bạn đã đọc và đồng ý với chúng tôi</span>
-          <div className='flex justify-evenly items-center'>
+          <div className='flex md:justify-evenly sm:flex-col md:items-center sm:gap-1'>
             <a href="" className='no-underline'>Chính sách bảo mật</a>
             và
             <a href="" className='no-underline'>Điều khoản dịch vụ</a>

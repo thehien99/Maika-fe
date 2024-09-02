@@ -32,15 +32,15 @@ const MainSercure = () => {
   return (
     <div className='bg-[#f7f3ff] w-full h-full'>
       <div className='container flex flex-col justify-center gap-4 p-4'>
-        <div className='flex flex-col justify-center items-center gap-4'>
+        <div className='flex flex-col justify-center items-center sm:text-center gap-4'>
           <h1 className='font-bold'>Bảo mật và tối ưu cho doanh nghiệp</h1>
           <h5>Giảp pháp toàn diện và an toàn để tối ưu hóa chi phí và nâng cao lợi thế cạnh tranh.</h5>
         </div>
         <div className='row'>
-          <div className="col-6">
+          <div className="col-6 col-md-6 col-sm-12">
             <img src={imgSercure} alt="" />
           </div>
-          <div className="col-6">
+          <div className="col-6 col-md-6 col-sm-12">
             <div className='grid grid-cols-2 gap-3 '>
               {ContentSercure?.map((item) => {
                 return (
