@@ -52,11 +52,11 @@ export const Header = () => {
             {scrollHeader ? <h4 className="text-white">MAIKA</h4> : <h4>MAIKA</h4>}
           </div>
           <div className="flex justify-center items-center">
-            <ul className="flex justify-center items-center">
+            <ul className="flex justify-center items-center xs:p-0">
               <li className="nav-item has-submenu">
                 {listProductLeft?.map((item) => {
                   return (
-                    <a onMouseEnter={() => setHover(item?.idx)} href={`login`} className="ms-3 text-white text text-center no-underline	hover:no-underline" key={item?.idx} >{item?.name}</a>
+                    <a onMouseEnter={() => setHover(item?.idx)} href='' className="ms-3 text-white text text-center no-underline	hover:no-underline" key={item?.idx} >{item?.name}</a>
                   )
                 })}
                 <div className="submenu">
@@ -67,7 +67,7 @@ export const Header = () => {
                   </div>
                 </div>
               </li>
-              <a href="" className="ms-3 text-white text text-center no-underline hover:no-underline sm:hidden md:block">Bảng giá</a>
+              <a href="/login" className="ms-3 text-white text text-center no-underline hover:no-underline sm:hidden md:block">Bảng giá</a>
             </ul>
           </div>
         </div>

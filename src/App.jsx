@@ -7,10 +7,10 @@ import Dashboard from "./dashboard/dashboard"
 function App() {
   return (
     <Routes>
-      <Route path={router?.home} element={<Home />} />
-      <Route path={router?.login} element={<Auth />} >
+      <Route path={router.home} element={<Home />} />
+      <Route path={router.login} element={<Auth />} >
       </Route>
-      <Route path={router?.dashboard} element={<Dashboard />} />
+      <Route path={router.dashboard} element={<Dashboard />} />
     </Routes>
 
   )

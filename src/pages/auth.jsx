@@ -9,8 +9,8 @@ const Auth = () => {
 
   return (
     <div className='relative w-[100vw] h-[150vh] bg-rose-50 overflow-x-hidden'>
-      <form className='absolute w-[28%]  top-[0] left-[50%] translate-x-[-50%] translate-y-[20%] flex flex-col justify-center items-center gap-3'>
-        <div className='flex flex-col justify-center items-center md:gap-3 sm:gap-7'>
+      <form className=' absolute md:w-[28%]  top-[0] left-[50%] translate-x-[-50%] translate-y-[20%] xs:translate-y-[5%] flex flex-col justify-center items-center gap-3'>
+        <div className='flex flex-col justify-center items-center md:gap-3 sm:gap-7 xs:gap-5'>
           <div className='flex justify-center items-center'>
             <a href="/" className='flex justify-center items-center gap-2 '>
               <img src="https://app.maika.ai/new-olli-logo.svg" alt="" />
@@ -39,9 +39,9 @@ const Auth = () => {
           <Button fieldBtn='Đăng nhập với Google' icon={<FaGoogle />} />
           <Button fieldBtn='Đăng nhập với Facebook' icon={<FaFacebook />} />
         </div>
-        <div>
+        <div className='xs:text-center'>
           <span>Bạn xác nhận rằng bạn đã đọc và đồng ý với chúng tôi</span>
-          <div className='flex md:justify-evenly sm:flex-col md:items-center sm:gap-1'>
+          <div className='flex md:justify-evenly sm:flex-col md:items-center sm:gap-1 xs:flex-col xs:text-center'>
             <a href="" className='no-underline'>Chính sách bảo mật</a>
             và
             <a href="" className='no-underline'>Điều khoản dịch vụ</a>
