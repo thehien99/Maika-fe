@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import review1 from "../../../assets/imgUserFeedBack/testimonial-1.jpg"
 import review2 from "../../../assets/imgUserFeedBack/testimonial-2.jpg"
 import review3 from "../../../assets/imgUserFeedBack/testimonial-3.jpg"
@@ -7,10 +7,11 @@ import review5 from "../../../assets/imgUserFeedBack/testimonial-5.jpg"
 import review6 from "../../../assets/imgUserFeedBack/testimonial-6.jpg"
 import review7 from "../../../assets/imgUserFeedBack/testimonial-7.jpg"
 import review8 from "../../../assets/imgUserFeedBack/testimonial-8.jpg"
+import { Carousel } from '../../../untils/carousel'
 
 
 const UserFeedback = () => {
-
+  const [show, setShow] = useState(window.innerWidth)
   const userReview = [
     {
       id: 1, imgUser: review1, name: 'Quốc Hiệp', location: 'SEO Freelancer', title: "Maika AI - “vũ khí bí mật” của Freelancer",
@@ -54,14 +55,23 @@ const UserFeedback = () => {
     },
 
   ]
+
+  useEffect(() => {
+    const handleResize = () => setShow(window.innerWidth)
+    window.addEventListener('resize', handleResize)
+
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+  console.log(show);
+
+
   return (
-    <div className='w-full h-full bg-[#f3f7ff]'>
-      <div className='md:p-16 xl:p-16  md:container'>
+    <div className='w-full h-full bg-[#f3f7ff] xs:mt-10'>
+      <div className='md:p-16 xl:p-16 xs:p-10 md:container '>
         <div>
           <h1 className='text-center font-bold'>Maika đã giúp gì cho người dùng?</h1>
         </div>
-
-        <div className='grid md:grid-cols-4 sm:grid-cols-2  w-full justify-center items-center md:gap-4 sm:gap-1 md:p-10'>
+        <div className='grid md:grid-cols-4 sm:grid-cols-2  w-full justify-center items-center md:gap-4 sm:gap-1 md:p-10 xs:gap-3 xs:mt-10 xs:hidden'>
           {userReview?.map((item) => {
             return (
               <div key={item?.id} className='border-2 p-6 rounded-3xl bg-[#ffffff] ' style={{ boxShadow: '0px 4px 10px -1px rgba(0, 0, 0, .08), 0px 0px 4px -1px rgba(0, 0, 0, .04)' }}>
@@ -83,6 +93,9 @@ const UserFeedback = () => {
               </div>
             )
           })}
+        </div>
+        <div className='container xs:block md:hidden'>
+          <Carousel userReview={userReview} />
         </div>
       </div>
     </div>

@@ -43,17 +43,17 @@ const MainTa = () => {
   return (
     <div className={`w-full h-full`}>
       <div className='container'>
-        <div className='row sm:flex-col-reverse md:flex-row'>
+        <div className='row sm:flex-col-reverse md:flex-row '>
           {contents?.map((item) => {
             return (
-              <div className={`col-6 col-md-6 col-sm-12 w-full flex justify-center items-center ${show === item?.idx ? 'block' : 'hidden'}`} key={item.idx}>
+              <div className={`col-lg-6 col-md-6 col-sm-12 w-full flex justify-center items-center ${show === item?.idx ? 'block' : 'hidden'}`} key={item.idx}>
                 <img src={item.img} alt="" className={`rounded w-[490px] h-[500px] object-cover ${show === item?.idx && `${item.bgColor}`}`} />
               </div>
             )
           })
           }
 
-          <div className=' col-6 col-md-6 col-sm-12 cursor-pointer'>
+          <div className=' col-lg-6 col-md-6 col-sm-12 cursor-pointer'>
             <div className='flex flex-col justify-center items-start gap-20'>
               <h1 className='pt-10'>Đón đầu xu hướng và tận dụng sức mạnh AI trong công việc và học tập</h1>
               <div className='w-full h-full'>

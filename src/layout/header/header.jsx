@@ -48,7 +48,7 @@ export const Header = () => {
       </div>
       <div className={` header container md:fixed ${scrollHeader ? 'header-scroll' : ""} ${show ? 'main-header' : 'sm:hidden'} md:top-0 z-10 !sm:w-full  md:right-[3%] xl:right-[6%] p-4 md:flex md:justify-around md:items-center`}>
         <div className="flex items-center gap-6 relative">
-          <div className="sm:hidden md:block">
+          <div className="sm:hidden md:block xs:hidden">
             {scrollHeader ? <h4 className="text-white">MAIKA</h4> : <h4>MAIKA</h4>}
           </div>
           <div className="flex justify-center items-center">
@@ -71,7 +71,7 @@ export const Header = () => {
             </ul>
           </div>
         </div>
-        <div>       
+        <div>
           <ul>
             <li className="has-menu-login">
               {listProductRight?.map((item) => {

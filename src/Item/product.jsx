@@ -1,10 +1,6 @@
 import icons from "../untils/icon"
 const Product = ({ hover }) => {
   const { SlSupport, FaPencilAlt, FaChrome, CiYoutube, TbSeo, AiOutlineShoppingCart, RiAdvertisementLine, TbLogs } = icons
-
-  console.log(hover);
-
-
   return (
     <div>
       {hover == 2 && <div className="container w-full bg-[#fff] p-4 rounded-md ">

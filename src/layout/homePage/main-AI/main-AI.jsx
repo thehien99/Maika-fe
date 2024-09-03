@@ -39,7 +39,7 @@ const MainAI = () => {
 
   return (
     <div className='w-full h-full bg-black'>
-      <div className='text-center text-white p-28'>
+      <div className='text-center text-white p-28 xs:p-10'>
         <h1>Đừng để bất cứ điều gì làm trở ngại bạn</h1>
       </div>
       <div className='flex text-white'>
@@ -70,14 +70,14 @@ const MainAI = () => {
         </div>
       </div>
       <div className='text-white flex flex-col justify-center items-center p-14 gap-3'>
-        <div className='w-[50%] text-center'>
+        <div className='w-[50%] text-center xs:w-full xs:text-center'>
           <h1 className='font-bold'>Bay vào vũ trụ sáng tạo vô tận cùng Maika AI</h1>
         </div>
-        <div className='w-[60%] text-center'>
+        <div className='w-[60%] text-center xs:w-full'>
           <h5 className='font-normal'>Đánh thức tiềm năng và xóa bỏ mọi giới hạn sáng tạo trong bạn bằng công cụ tạo hình ảnh. Biến ý tưởng trong mơ thành tác phẩm vượt xa tưởng tượng.</h5>
         </div>
         <div className='bg-teal-300 text-black p-2 font-medium rounded-3xl'>
-          Sắp ra mắt 
+          Sắp ra mắt
         </div>
       </div>
     </div >

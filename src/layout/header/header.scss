@@ -149,3 +149,32 @@
     display: flex;
   }
 }
+@media screen and (max-width: 640px) {
+  .header {
+    display: none;
+  }
+  .main-header {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100px;
+    right: 0%;
+    z-index: 12;
+    transition-timing-function: linear;
+  }
+  .header-nav {
+    position: absolute;
+    font-size: 50px;
+    color: #fff;
+    top: 56px;
+    right: 30px;
+    z-index: 11;
+    display: block;
+  }
+
+  .has-menu-login {
+    display: flex;
+  }
+}

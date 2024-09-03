@@ -20,7 +20,7 @@ const MainStory = () => {
   ]
   return (
     <div className=" container flex justify-center items-center p-24 flex-col">
-      <div className='main-story-title'>
+      <div className='main-story-title xs:text-center'>
         <h1 className='font-bold'>Câu chuyện khách hàng truyền cảm hứng</h1>
         <h6 className='text-center p-4'>Trải nghiệm thực tế của những người thành công đến từ mọi lĩnh vực.</h6>
       </div>

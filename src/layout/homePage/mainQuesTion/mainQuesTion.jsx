@@ -22,8 +22,8 @@ const MainQuesTion = () => {
   return (
     <div className='w-full h-full bg-[#c8e2e86b]'>
       <div className='container p-24'>
-        <div className='row'>
-          <div className="col-5">
+        <div className='row xs:flex-col xs:gap-5'>
+          <div className="col-md-5 col-sm-12 ">
             <div className='flex flex-col justify-center gap-2'>
               <h1 className='font-bold'>Câu hỏi thường gặp</h1>
               <div className='flex flex-col justify-center'>
@@ -34,7 +34,7 @@ const MainQuesTion = () => {
               </div>
             </div>
           </div>
-          <div className="col-7">
+          <div className="col-md-7 col-sm-12">
             <div className='flex flex-col justify-center gap-2 ' >
               {moreQuestion?.map((item) => {
                 return (

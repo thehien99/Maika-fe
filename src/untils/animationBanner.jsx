@@ -4,7 +4,7 @@ import '../untils/styleBanner.scss'
 
 const texts = ["Dịch thuật đa ngôn ngữ",
   "Viết nội dung chuẩn SEO",
-  "Viết các bài quảng cáo cho đa nền tảng xã hội",
+  "Viết các bài quảng cáo",
   "Viết các bài đăng xã hội cuốn hút"
 ]
   ;

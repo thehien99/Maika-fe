@@ -12,21 +12,21 @@ const Footer = () => {
   return (
     <div className='w-full h-full bg-[#000C8C]'>
       <div className='container p-10'>
-        <div className=' flex sm:flex-col md:flex-row  md:gap-28 sm:gap-10'>
+        <div className=' flex sm:flex-col md:flex-row  md:gap-28 sm:gap-10 xs:flex-col xs:justify-center xs:items-center xs:gap-5'>
           <div>
             <h1 className='text-white'>MAIKA</h1>
           </div>
-          <div className='md:grid md:grid-cols-4 sm:flex sm:gap-12 sm:justify-center md:gap-20'>
+          <div className='md:grid md:grid-cols-4 sm:flex sm:gap-12 sm:justify-center md:gap-20 xs:flex xs:gap-2'>
             {contentFooter?.map((item) => {
               return (
                 <div>
-                  <ul className='text-white sm:p-0 '>
+                  <ul className='text-white sm:p-0 xs:p-0 '>
                     <li className='font-bold mb-6'>{item?.title}</li>
                     <li>{item?.sub}</li>
-                    <li className='md:mt-2 sm:mt-4'>{item?.sub1}</li>
-                    <li className='md:mt-2 sm:mt-4'>{item?.sub2}</li>
-                    <li className='md:mt-2 sm:mt-4'>{item?.sub3}</li>
-                    <li className='md:mt-2 sm:mt-4'>{item?.sub4}</li>
+                    <li className='md:mt-2 sm:mt-4 xs:mt-4'>{item?.sub1}</li>
+                    <li className='md:mt-2 sm:mt-4 xs:mt-4'>{item?.sub2}</li>
+                    <li className='md:mt-2 sm:mt-4 xs:mt-4'>{item?.sub3}</li>
+                    <li className='md:mt-2 sm:mt-4 xs:mt-4'>{item?.sub4}</li>
                   </ul>
                 </div>
               )
@@ -36,10 +36,11 @@ const Footer = () => {
           </div>
         </div>
         <hr className='text-slate-100' />
-        <div className='text-white flex justify-around items-center'>
-          <div className='flex gap-5'>
+
+        <div className='text-white flex justify-around items-center xs:flex-col xs:gap-3'>
+          <div className='flex md:gap-5 xs:flex-col xs:gap-2'>
             <span>© 2024 Maika AI. All rights reserved.</span>
-            <span>Tiếng Việt</span>
+            <span className='text-center'> Tiếng Việt</span>
           </div>
           <div className='flex gap-5'>
             <span>Chính sách bảo mật</span>

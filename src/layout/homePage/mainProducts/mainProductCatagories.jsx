@@ -30,12 +30,12 @@ const MainProductCatagories = () => {
   return (
     <div className='flex flex-col gap-9'>
       <div className='w-full'>
-        <ul className='flex justify-center items-center gap-6 font-bold'>
+        <ul className='flex justify-center items-center gap-6 font-bold xs:p-0'>
           {categories?.map((item) => {
             return (
               <li
                 key={item.idx}
-                className={`sm:text-center p-3 rounded-full text-black bg-[#fff] border-2 cursor-pointer ${item.idx === "1" && 'bg-black text-white'} hover:bg-[#ccc] hover:text-white `}
+                className={`sm:text-center xs:rounded xs:text-[15px] p-3 rounded-full text-black bg-[#fff] border-2 cursor-pointer ${item.idx === "1" && 'bg-black text-white'} hover:bg-[#ccc] hover:text-white `}
               >
                 {item?.name}
               </li>
@@ -45,9 +45,9 @@ const MainProductCatagories = () => {
       </div>
 
       <div className='categories-sub w-full' >
-        <div className='w-full h-full bg-[#000C8C] rounded-3xl container !px-[55px] py-[70px]'>
-          <div className='row md:flex-row sm:flex-col md:gap-0 sm:gap-[50px] categories-sub-up h-[75%]'>
-            <div className='col-6 col-md-6 col-sm-12 flex flex-col gap-[19px]'>
+        <div className='w-full h-full bg-[#000C8C] rounded-3xl container  !px-[55px] py-[70px]'>
+          <div className='row md:flex-row sm:flex-col md:gap-0 sm:gap-[50px] xs:flex-col xs:gap-10 categories-sub-up h-[75%]'>
+            <div className='col-lg-6 col-md-6 col-sm-12   flex flex-col gap-[19px]'>
               <div className='text-white flex justify-cente flex-col gap-4'>
                 <h3 className='font-bold'>Viết nội dung tiếp thị đa kênh theo mẫu</h3>
                 <span>
@@ -66,14 +66,14 @@ const MainProductCatagories = () => {
                   })}
                 </ul>
               </div>
-              <div className='cursor-pointer xl:flex xl:flex-row xl:justify-start md:flex md:flex-col md:justify-center md:gap-4 '>
-                <span className='p-3 bg-[#fff] rounded-2xl me-4 font-bold md:w-full xl:w-max'>Tìm hiểu thêm</span>
+              <div className='cursor-pointer flex xl:flex-row xl:justify-start md:flex-col md:justify-center md:gap-4 xs:flex-col xs:gap-6 '>
+                <span className='p-3 bg-[#fff] rounded-2xl me-4 font-bold md:w-full xl:w-max xs:w-full'>Tìm hiểu thêm</span>
                 <span className='p-3 border-2 rounded-2xl text-white font-bold hover:border-[#000]'>Khám phá ngay</span>
               </div>
             </div>
-            <div className='col-6 col-md-6 col-sm-12 ps-[30px]'>
+            <div className='col-lg-6 col-md-6 col-sm-12 ps-[30px]'>
               <div className='w-full'>
-                <img src={categoriesImg} alt="" className='rounded-3xl ' width='90%' />
+                <img src={categoriesImg} alt="" className='rounded-3xl ' width='100%' />
               </div>
             </div>
           </div>
@@ -82,13 +82,13 @@ const MainProductCatagories = () => {
             <hr className='my-[5rem]' />
           </div>
 
-          <div className='row md:flex-row sm:flex-col md:gap-0 sm:gap-[50px] categories-sub-down'>
-            <div className='col-6 col-md-6 col-sm-12 flex flex-col ps-[30px]'>
+          <div className='row md:flex-row sm:flex-col md:gap-0 sm:gap-[50px] xs:flex-col categories-sub-down xs:gap-10'>
+            <div className='col-lg-6 col-md-6 col-sm-12 flex flex-col ps-[30px] '>
               <div className=''>
-                <img src={categoriesImg} alt="" className='rounded-3xl' width='90%' />
+                <img src={categoriesImg} alt="" className='rounded-3xl' width='100%' />
               </div>
             </div>
-            <div className='col-6 col-md-6 col-sm-12 flex flex-col gap-8'>
+            <div className='col-lg-6 col-md-6 col-sm-12 flex flex-col gap-8'>
               <div className='text-white flex justify-cente flex-col gap-4'>
                 <h3 className='font-bold'>Workflow</h3>
                 <span>
@@ -106,8 +106,8 @@ const MainProductCatagories = () => {
                   })}
                 </ul>
               </div>
-              <div className='cursor-pointer xl:flex xl:flex-row xl:justify-start md:flex md:flex-col md:justify-center md:gap-4 '>
-                <span className='p-3 bg-[#fff] rounded-2xl me-4 font-bold md:w-full xl:w-max'>Tìm hiểu thêm</span>
+              <div className='cursor-pointer flex xl:flex-row xl:justify-start md:flex-col md:justify-center md:gap-4 xs:flex-col xs:gap-6  '>
+                <span className='p-3 bg-[#fff] rounded-2xl me-4 font-bold md:w-full xs:w-full'>Tìm hiểu thêm</span>
                 <span className='p-3 border-2 rounded-2xl text-white font-bold hover:border-[#000]'>Khám phá ngay</span>
               </div>
             </div>
