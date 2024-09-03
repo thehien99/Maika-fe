@@ -3,6 +3,7 @@ import { formatVietnameseToString } from "../../untils/formatVietnameseToString"
 import icons from "../../untils/icon";
 import "../header/header.scss"
 import { useEffect, useState } from "react"
+import { Link } from 'react-router-dom';
 
 
 export const Header = () => {
@@ -56,18 +57,18 @@ export const Header = () => {
               <li className="nav-item has-submenu">
                 {listProductLeft?.map((item) => {
                   return (
-                    <a onMouseEnter={() => setHover(item?.idx)} href='' className="ms-3 text-white text text-center no-underline	hover:no-underline" key={item?.idx} >{item?.name}</a>
+                    <Link onMouseEnter={() => setHover(item?.idx)} href='' className="ms-3 text-white text text-center no-underline	hover:no-underline" key={item?.idx} >{item?.name}</Link>
                   )
                 })}
                 <div className="submenu">
                   <div>
-                    <a href="#web-dev " className="submenu-link no-underline hover:no-underline text-black w-full">
+                    <Link href="#web-dev " className="submenu-link no-underline hover:no-underline text-black w-full">
                       <Product hover={hover} />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </li>
-              <a href="/login" className="ms-3 text-white text text-center no-underline hover:no-underline sm:hidden md:block">Bảng giá</a>
+              <Link to="/login" className="ms-3 text-white text text-center no-underline hover:no-underline sm:hidden md:block">Bảng giá</Link>
             </ul>
           </div>
         </div>
